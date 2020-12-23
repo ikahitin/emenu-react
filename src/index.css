@@ -107,6 +107,7 @@ nav {
 
 .title {
   font-weight: 600;
+  font-size: 15px;
 }
 
 .description {
@@ -354,5 +355,11 @@ a.anchor {
   color: #FFF;
   border-radius: 19px;
   margin: auto;
+}
+.loading{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

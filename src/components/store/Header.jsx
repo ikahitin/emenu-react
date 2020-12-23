@@ -1,7 +1,7 @@
 import React from "react";
 import { Link} from "react-scroll";
 
-function Header() {
+const Header = () => {
   const slideDown = element => element.style.height = `${element.scrollHeight}px`;
   const slideUp = element => element.style.height = 0;
   function showMenu() {
@@ -16,7 +16,7 @@ function Header() {
     <header>
       <div className="maintext" >Menu</div>
       <div className="navblock">
-        <span className="section-name" id="section_ddl">Table №2</span>
+        <span className="section-name" id="section_ddl">Table № 2</span>
         <nav>
           Navigate
                 <div className="menuicon showHideMenu" id='showMenu' onClick={() => showMenu()}></div>
@@ -26,14 +26,14 @@ function Header() {
       <div className="dropdown" id='dropdown'>
         <div>
           <ul>
-            <a href="/#Main dishes">
-              <li>Main dishes</li>
-            </a>
             <Link to="Breakfasts" spy={true} smooth={true} offset={-100} duration={500}>
               <li>Breakfasts</li>
             </Link>
-            <Link to="Dinners" spy={true} smooth={true} offset={-100} duration={500}>
-              <li>Dinners</li>
+            <Link to="Main dishes" spy={true} smooth={true} offset={-100} duration={500}>
+              <li>Main dishes</li>
+            </Link>
+            <Link to="Desserts" spy={true} smooth={true} offset={-100} duration={500}>
+              <li>Desserts</li>
             </Link>
           </ul>
         </div>

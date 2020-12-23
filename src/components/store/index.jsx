@@ -1,8 +1,8 @@
-import React, { useRef, useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import Header from './Header'
 import { CartContext } from "../cart/context";
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 
 export default function Store() {
@@ -24,13 +24,13 @@ export default function Store() {
                 document.getElementById(cartCtx.items[i].id).value = cartCtx.items[i].quantity
             }
         }
-        axios.get("http://127.0.0.1:8000/api/menu/").then(response => {
+        axios.get("http://spotvoider.pythonanywhere.com/api/menu/").then(response => {
             setProducts(response.data);
             setLoading(false);
         });
     }, []);
     if (isLoading) {
-        return <div className="App">Loading...</div>;
+        return <div className="App loading">Loading...</div>;
     }
     return (
         <div className='content'>

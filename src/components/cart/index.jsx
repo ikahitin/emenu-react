@@ -32,8 +32,8 @@ export default function Cart() {
                     </div>
                 </div>
             ))}
-            <p className='total'>Total price: {totalPrice(ctx.items)}</p>
-            <p className='checkout'><div className='chbutton'>Checkout</div></p>
+            <p className='total'>Total price: {totalPrice(ctx.items)} $</p>
+            <div className='checkout'><div className='chbutton'>Checkout</div></div>
             </div>
 
     )
