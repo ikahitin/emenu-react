@@ -1,6 +1,7 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![cover image](https://github.com/spotvoider/emenu-react/blob/master/public/images/cover.png?raw=true)
+
+This project was made together with application on [Django RestAPI](https://github.com/spotvoider/django-rest-menu) and you might need to have those 2 project to get best experience with this app.
 
 ## Available Scripts
 
