@@ -1,7 +1,7 @@
 
-![cover image](https://github.com/spotvoider/emenu-react/blob/master/public/images/cover.png?raw=true)
+![cover image](https://github.com/ikahitin/emenu-react/blob/master/public/images/cover.png?raw=true)
 
-This project was made together with application on [Django RestAPI](https://github.com/spotvoider/django-rest-menu) and you might need to have those 2 project to get best experience with this app.
+This project was made together with application on [Django RestAPI](https://github.com/ikahitin/django-rest-menu) and you might need to have those 2 project to get best experience with this app.
 
 ## Available Scripts
 
